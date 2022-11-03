@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import data from './data/dogs.json'
+import 'bulma/css/bulma.min.css';
+import { useState } from 'react';
 
-function App() {
+function App({ data, greeting}) {
+  // { data: ["beans", "mina"], greeting: "hullo"}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App m-3">
+      <h1 className="title">Dogs Go Here</h1>
+      <div className="dog-list">
+          {data.map(dog =>
+            <DogCard dogName={dog} />
+          )}
+      </div>
+
     </div>
   );
 }
 
+
+const DogCard = ({dogName}) => {
+  const [expanded, setExpanded] = useState(false)
+
+  const handleClick = (event) => {
+    console.log("CLICKEDDDDDD")
+    setExpanded(!expanded)
+  }
+
+  return (
+    <div className="dog-card">
+      <h2>{dogName}</h2>
+      <button className="button" onClick={handleClick}>Show more info</button>
+      { expanded &&
+        <div className="dog-description">This is a nice dog</div>
+      }
+
+    </div>
+  )
+}
 export default App;

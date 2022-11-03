@@ -1,0 +1,67 @@
+{
+  "dogs": [
+    {
+      "name": "Beans",
+      "description": "A black-and-white shaggy dog",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/beans.jpg",
+      "traits": ["Adult", "Male", "Medium", "Easygoing", "Good with cats"],
+      "adopted": false
+    },
+    {
+      "name": "Zelda",
+      "description": "A Boston Terrier",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/boston-terrier.jpg",
+      "traits": ["Senior", "Female", "Small", "Easygoing", "Good with kids", "Good with other dogs"],
+      "adopted": false
+    },
+    {
+      "name": "Baby",
+      "description": "A brown Boxer",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/boxer.jpg",
+      "traits": ["Young", "Female", "Large", "Energetic", "Good with kids", "Good with other dogs"],
+      "adopted": false
+    },
+    {
+      "name": "Tom-Tom",
+      "description": "A golden Lab",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/golden-lab.jpg",
+      "traits": ["Young", "Male", "Large", "Energetic", "Good with kids", "Good with other dogs", "Good with cats"],
+      "adopted": false
+    },
+    {
+      "name": "Marco",
+      "description": "A little fuzzy dog",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/little-dog.jpg",
+      "traits": ["Adult", "Male", "Small", "Energetic"],
+      "adopted": true
+    },
+    {
+      "name": "Shackleton",
+      "description": "A shaggy white dog",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/old-shaggy.jpg",
+      "traits": ["Adult", "Male", "Medium", "Easygoing", "Energetic", "Good with kids", "Good with other dogs", "Good with cats"],
+      "adopted": false
+    },
+    {
+      "name": "Midge",
+      "description": "A Shih-Tzu",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/shih-tzu.jpg",
+      "traits": ["Adult", "Female", "Small", "Easygoing", "Good with kids"],
+      "adopted": false
+    },
+    {
+      "name": "Ladybird",
+      "description": "A silly Boxer",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/young-bulldog.jpg",
+      "traits": ["Young", "Female", "Large", "Easygoing", "Energetic", "Good with kids", "Good with other dogs", "Good with cats"],
+      "adopted": true
+    },
+    {
+      "name": "Mina",
+      "description": "A young brown and white dog",
+      "image": "https://shelterdemo-2018-11.s3.us-east-2.amazonaws.com/dogs/young-peppy.jpg",
+      "traits": ["Puppy", "Female", "Medium", "Energetic", "Good with kids", "Good with other dogs", "Good with cats"],
+      "adopted": false
+    }
+  ]
+}
