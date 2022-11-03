@@ -1,16 +1,13 @@
-import data from './data/dogs.json'
 import 'bulma/css/bulma.min.css';
 import { useState } from 'react';
 
-function App({ data, greeting}) {
-  // { data: ["beans", "mina"], greeting: "hullo"}
-
+function App({ dogData }) {
   return (
     <div className="App m-3">
       <h1 className="title">Dogs Go Here</h1>
       <div className="dog-list">
-          {data.map(dog =>
-            <DogCard dogName={dog} />
+          {dogData.map(dog =>
+            <DogCard dogName={dog.name} />
           )}
       </div>
 
@@ -23,7 +20,6 @@ const DogCard = ({dogName}) => {
   const [expanded, setExpanded] = useState(false)
 
   const handleClick = (event) => {
-    console.log("CLICKEDDDDDD")
     setExpanded(!expanded)
   }
 
