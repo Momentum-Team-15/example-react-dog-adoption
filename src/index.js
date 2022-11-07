@@ -7,6 +7,6 @@ import data from './data/dogs.json'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App dogData={data.dogs} />
+    <App  />
   </React.StrictMode>
 );
