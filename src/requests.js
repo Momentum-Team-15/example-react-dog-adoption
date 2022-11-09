@@ -22,3 +22,14 @@ export const requestDogData = async () => {
   return response
 }
 
+export const requestDogDetail = async (id) => {
+  const token = await getToken(process.env.REACT_APP_PETFINDER_API_KEY, process.env.REACT_APP_PETFINDER_SECRET)
+  const URL=`https://api.petfinder.com/v2/animals/${id}`
+
+  const response = await axios.get(URL, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  })
+  return response
+}
