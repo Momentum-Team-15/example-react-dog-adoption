@@ -5,6 +5,7 @@ export default function Dog({selectedDogId, setSelectedDogId}) {
   const [breed, setBreed] = useState('')
   const [description, setDescription] = useState('')
   const [contact, setContact] = useState('')
+
   const handleGoBack = () => setSelectedDogId(null)
   useEffect(() => {
     requestDogDetail(selectedDogId).then(res => {
